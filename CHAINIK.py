@@ -1,19 +1,5 @@
 import random
 import string
-
-'''class ARa:
-    def __init__(self,name):
-        self.name=name
-    name="Agent 2"
-    ege=99
-    stat='idk'
-    def hello (self):
-        print('privi',self.name)
-n=ARa(name='agent2')
-n.hello()'''
-
-
-
 class Chainik:
     def __init__(self,obiem,stan,nazva,mode):
         self.obiem=obiem
@@ -42,8 +28,6 @@ class Chainik:
         else:
             self.stan = 'off'
             print('viklucheni chainik')
-'''gg=Chainik(obiem='10litrov',nazva='BAlboa',stan="dfsvgklhdsfvlkbjar")
 
-gg=Chainik(obiem='-10litrov',nazva='Tangaroa or Utopia',stan="9999 let")'''
 
 
