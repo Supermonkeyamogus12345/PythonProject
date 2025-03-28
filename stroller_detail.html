@@ -1,0 +1,1204 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Дитяча багатофункціональна коляска 2в1 Donatan  {{ single_stroller }} від українського
+    виробника{% endblock %}
+{% block meta %}Купити дитячу коляску 2 в 1 Donatan {{ single_stroller }} за найкращою ціною від виробника. Ідеально
+    підходить для хлопчика чи дівчинки. Український бренд, висока якість та зручність.{% endblock %}
+
+{% block structured_data %}
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Дитяча багатофункціональна коляска 2в1 Donatan {{ single_stroller }}",
+  "image": "{{ single_stroller.stroller_photo_1.url }}",
+  "description": "Купити дитячу багатофункціональну коляску 2в1 Donatan {{ single_stroller }} від українського виробника. Ідеальний варіант для хлопчика чи дівчинки. Висока якість, зручність та сучасний дизайн.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Donatan"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ request.build_absolute_uri }}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock"
+  }
+}
+    </script>
+{% endblock %}
+
+{% block og_title %}Дитяча багатофункціональна коляска 2в1 Donatan {{ single_stroller }} від українського
+    виробника{% endblock %}
+
+{% block og_description %}Купити дитячу багатофункціональну коляску 2в1 Donatan {{ single_stroller }} від українського
+    виробника. Ідеальний варіант для хлопчика чи дівчинки. Висока якість, зручність та сучасний дизайн.
+{% endblock %}
+
+{% block og_image %}{{ single_stroller.stroller_photo_1.url }}{% endblock %}
+
+{% block og_url %}{{ request.build_absolute_uri }}{% endblock %}
+
+{% block style %}
+
+{% endblock %}
+
+{% block content %}
+    <!-- --------- Crumbs Section --------- -->
+
+    <section>
+        <div class="container breadcrumb">
+            <p>
+                <a href="{% url 'pages:index' %}">Головна</a> / <a href="{% url 'catalog:catalog' %}">Коляски</a> /
+                <a href="" style="color: #9DB2BF; cursor: default">{{ single_stroller.model_name }}</a>
+            </p>
+        </div>
+    </section>
+    <!-- --------- End Crumbs Section --------- -->
+
+    <section class="display-mob">
+
+        <div class="gallery-container-mob-ss">
+            <div class="gallery-mob-ss" id="gallery-mob-ss">
+                {% if single_stroller.stroller_photo_1 %}
+                    <img src="{{ single_stroller.stroller_photo_1.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                {% endif %}
+
+                {% if single_stroller.stroller_photo_2 %}
+                    <img src="{{ single_stroller.stroller_photo_2.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                {% endif %}
+
+                {% if single_stroller.stroller_photo_3 %}
+                    <img src="{{ single_stroller.stroller_photo_3.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                {% endif %}
+
+                {% if single_stroller.stroller_photo_4 %}
+                    <img src="{{ single_stroller.stroller_photo_4.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                {% endif %}
+
+                {% if single_stroller.stroller_photo_5 %}
+                    <img src="{{ single_stroller.stroller_photo_5.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                {% endif %}
+
+                {% if single_stroller.stroller_photo_6 %}
+                    <img src="{{ single_stroller.stroller_photo_6.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                {% endif %}
+
+                {% if single_stroller.stroller_photo_7 %}
+                    <img src="{{ single_stroller.stroller_photo_7.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                {% endif %}
+
+                {% if single_stroller.stroller_photo_8 %}
+                    <img src="{{ single_stroller.stroller_photo_8.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                {% endif %}
+
+            </div>
+            <a class="prev-mob-ss" onclick="plusSlidesMobSs(-1)">&#10094;</a>
+            <a class="next-mob-ss" onclick="plusSlidesMobSs(1)">&#10095;</a>
+        </div>
+
+        <div class="dots-container-mob-ss">
+            {% if single_stroller.stroller_photo_1 %}
+                <span class="dot-mob-ss" onclick="currentSlideMobSs(1)"></span>
+            {% endif %}
+            {% if single_stroller.stroller_photo_2 %}
+                <span class="dot-mob-ss" onclick="currentSlideMobSs(2)"></span>
+            {% endif %}
+            {% if single_stroller.stroller_photo_3 %}
+                <span class="dot-mob-ss" onclick="currentSlideMobSs(3)"></span>
+            {% endif %}
+            {% if single_stroller.stroller_photo_4 %}
+                <span class="dot-mob-ss" onclick="currentSlideMobSs(4)"></span>
+            {% endif %}
+            {% if single_stroller.stroller_photo_5 %}
+                <span class="dot-mob-ss" onclick="currentSlideMobSs(5)"></span>
+            {% endif %}
+            {% if single_stroller.stroller_photo_6 %}
+                <span class="dot-mob-ss" onclick="currentSlideMobSs(6)"></span>
+            {% endif %}
+            {% if single_stroller.stroller_photo_7 %}
+                <span class="dot-mob-ss" onclick="currentSlideMobSs(7)"></span>
+            {% endif %}
+            {% if single_stroller.stroller_photo_8 %}
+                <span class="dot-mob-ss" onclick="currentSlideMobSs(8)"></span>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- --------- Title Section --------- -->
+
+    <section class="shop-page-wrapper container">
+        <div class="grid grid--2-cols-product">
+            <div class="sticky-carousel display-pc">
+                <div class="carousel-container">
+                    <div class="thumbnails">
+
+                        {% if single_stroller.stroller_photo_1 %}
+                            <img
+                                    src="{{ single_stroller.stroller_photo_1.url }}"
+                                    alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    class="thumbnail active"
+                            />
+                        {% endif %}
+                        {% if single_stroller.stroller_photo_2 %}
+
+                            <img
+                                    src="{{ single_stroller.stroller_photo_2.url }}"
+                                    alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    class="thumbnail"
+                            />
+                        {% endif %}
+                        {% if single_stroller.stroller_photo_3 %}
+
+                            <img
+                                    src="{{ single_stroller.stroller_photo_3.url }}"
+                                    alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    class="thumbnail"
+                            />
+                        {% endif %}
+                        {% if single_stroller.stroller_photo_4 %}
+
+                            <img
+                                    src="{{ single_stroller.stroller_photo_4.url }}"
+                                    alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    class="thumbnail"
+                            />
+                        {% endif %}
+                        {% if single_stroller.stroller_photo_5 %}
+
+                            <img
+                                    src="{{ single_stroller.stroller_photo_5.url }}"
+                                    alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    class="thumbnail"
+                            />
+                        {% endif %}
+                        {% if single_stroller.stroller_photo_6 %}
+
+                            <img
+                                    src="{{ single_stroller.stroller_photo_6.url }}"
+                                    alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    class="thumbnail"
+                            />
+                        {% endif %}
+                        {% if single_stroller.stroller_photo_7 %}
+                            <img
+                                    src="{{ single_stroller.stroller_photo_7.url }}"
+                                    alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    class="thumbnail"
+                            />
+                        {% endif %}
+                        {% if single_stroller.stroller_photo_8 %}
+
+                            <img
+                                    src="{{ single_stroller.stroller_photo_8.url }}"
+                                    alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    class="thumbnail"
+                            />
+                        {% endif %}
+                    </div>
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            {% if single_stroller.stroller_photo_1 %}
+                                <div class="carousel-item active">
+                                    <img
+                                            src="{{ single_stroller.stroller_photo_1.url }}"
+                                            alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    />
+                                </div>
+                            {% endif %}
+
+                            {% if single_stroller.stroller_photo_2 %}
+                                <div class="carousel-item">
+                                    <img
+                                            src="{{ single_stroller.stroller_photo_2.url }}"
+                                            alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    />
+                                </div>
+                            {% endif %}
+
+                            {% if single_stroller.stroller_photo_3 %}
+                                <div class="carousel-item">
+                                    <img
+                                            src="{{ single_stroller.stroller_photo_3.url }}"
+                                            alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    />
+                                </div>
+                            {% endif %}
+
+                            {% if single_stroller.stroller_photo_4 %}
+                                <div class="carousel-item">
+                                    <img
+                                            src="{{ single_stroller.stroller_photo_4.url }}"
+                                            alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    />
+                                </div>
+                            {% endif %}
+
+                            {% if single_stroller.stroller_photo_5 %}
+                                <div class="carousel-item">
+                                    <img
+                                            src="{{ single_stroller.stroller_photo_5.url }}"
+                                            alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    />
+                                </div>
+                            {% endif %}
+
+                            {% if single_stroller.stroller_photo_6 %}
+                                <div class="carousel-item">
+                                    <img
+                                            src="{{ single_stroller.stroller_photo_6.url }}"
+                                            alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    />
+                                </div>
+                            {% endif %}
+
+                            {% if single_stroller.stroller_photo_7 %}
+                                <div class="carousel-item">
+                                    <img
+                                            src="{{ single_stroller.stroller_photo_7.url }}"
+                                            alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    />
+                                </div>
+                            {% endif %}
+
+                            {% if single_stroller.stroller_photo_8 %}
+                                <div class="carousel-item">
+                                    <img
+                                            src="{{ single_stroller.stroller_photo_8.url }}"
+                                            alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                                    />
+                                </div>
+                            {% endif %}
+
+                        </div>
+                        <button
+                                class="carousel-control-prev"
+                                role="button"
+                        >
+                            &#10094;
+                        </button>
+                        <button
+                                class="carousel-control-next"
+                                role="button"
+                        >
+                            &#10095;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal">
+                    <span class="close" id="close">&times;</span>
+                    <div class="modal-content">
+                        <img
+                                id="modal-image"
+                                src=""
+                                alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"
+                        />
+                        <button
+                                class="modal-control-prev"
+                                role="button"
+                        >
+                            &#10094;
+                        </button>
+                        <button
+                                class="modal-control-next"
+                                role="button"
+                        >
+                            &#10095;
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <h1 class="heading-primary" style="margin-bottom: 4rem">
+                    {{ single_stroller.title_name }}
+                </h1>
+                <div class="availability">
+                    <div>
+                        <p>{{ single_stroller.price }} UAH</p>
+                    </div>
+
+                </div>
+                <div class="product-description">
+                    {{ single_stroller.description | safe }}
+                </div>
+                <div>
+                    <div id="color-modal" class="modal">
+                                <span class="close" onclick="closeColorModal()"
+                                >&times;</span
+                                >
+                        <div class="modal-content">
+                            <img
+                                    class="modal-image"
+                                    id="color-modal-image"
+                            />
+                        </div>
+                        <a
+                                class="modal-control-prev"
+                                onclick="changeColorImage(-1)"
+                        >&#10094;</a
+                        >
+                        <a
+                                class="modal-control-next"
+                                onclick="changeColorImage(1)"
+                        >&#10095;</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="color-gallery container">
+        <h2 class="heading-tertiary">Кольорова гама</h2>
+        <div class="detail-color-gallery">
+
+            {% if single_stroller.stroller_color_1 %}
+                <div class="detail-color__container">
+                    <img src="{{ single_stroller.stroller_color_1.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 1</p>
+                </div>
+            {% endif %}
+
+            {% if single_stroller.stroller_color_2 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_2.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 2</p>
+                </div>
+            {% endif %}
+
+            {% if single_stroller.stroller_color_3 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_3.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 3</p>
+                </div>
+            {% endif %}
+
+            {% if single_stroller.stroller_color_4 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_4.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 4</p>
+                </div>
+            {% endif %}
+
+            {% if single_stroller.stroller_color_5 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_5.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 5</p>
+                </div>
+            {% endif %}
+
+            {% if single_stroller.stroller_color_6 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_6.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 6</p>
+                </div>
+            {% endif %}
+
+            {% if single_stroller.stroller_color_7 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_7.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 7</p>
+                </div>
+            {% endif %}
+            {% if single_stroller.stroller_color_8 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_8.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 8</p>
+                </div>
+            {% endif %}
+            {% if single_stroller.stroller_color_9 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_9.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 9</p>
+                </div>
+            {% endif %}
+            {% if single_stroller.stroller_color_10 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_10.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 10</p>
+                </div>
+            {% endif %}
+            {% if single_stroller.stroller_color_11 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_11.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 11</p>
+                </div>
+            {% endif %}
+            {% if single_stroller.stroller_color_12 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_12.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 12</p>
+                </div>
+            {% endif %}
+            {% if single_stroller.stroller_color_13 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_13.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 13</p>
+                </div>
+            {% endif %}
+            {% if single_stroller.stroller_color_14 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_14.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 14</p>
+                </div>
+            {% endif %}
+            {% if single_stroller.stroller_color_15 %}
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_15.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 15</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div id="detailColorModal" class="detail-color-modal">
+        <span class="detail-color-close">&times;</span>
+        <img class="detail-color-modal-content" id="detailColorImg01">
+        <a class="detail-color-prev">&#10094;</a>
+        <a class="detail-color-next">&#10095;</a>
+    </div>
+    <script>
+        let detailColorModal = document.getElementById("detailColorModal");
+        let detailColorModalImg = document.getElementById("detailColorImg01");
+        let detailColorImages = document.querySelectorAll('.detail-color-gallery img');
+        let detailColorCurrentIndex = 0;
+
+        detailColorImages.forEach((img, index) => {
+            img.addEventListener('click', function () {
+                detailColorModal.style.display = "flex";
+                detailColorModalImg.src = this.src;
+                detailColorCurrentIndex = index;
+            });
+        });
+
+        let detailColorClose = document.getElementsByClassName("detail-color-close")[0];
+        detailColorClose.onclick = function () {
+            detailColorModal.style.display = "none";
+        }
+
+        let detailColorPrev = document.getElementsByClassName("detail-color-prev")[0];
+        let detailColorNext = document.getElementsByClassName("detail-color-next")[0];
+
+        detailColorPrev.onclick = function () {
+            detailColorCurrentIndex = (detailColorCurrentIndex === 0) ? detailColorImages.length - 1 : detailColorCurrentIndex - 1;
+            detailColorModalImg.src = detailColorImages[detailColorCurrentIndex].src;
+        }
+
+        detailColorNext.onclick = function () {
+            detailColorCurrentIndex = (detailColorCurrentIndex === detailColorImages.length - 1) ? 0 : detailColorCurrentIndex + 1;
+            detailColorModalImg.src = detailColorImages[detailColorCurrentIndex].src;
+        }
+
+        // Close the modal when clicking outside the image
+        detailColorModal.addEventListener('click', function (event) {
+            if (event.target === detailColorModal) {
+                detailColorModal.style.display = "none";
+            }
+        });
+    </script>
+
+    <!-- --------- End Title Section --------- -->
+
+
+
+
+    <!-- --------- Features Section --------- -->
+
+    <section class="features-section container">
+        <div class="description-detail">
+            <h2
+                    class="heading-primary-left"
+            >
+                Характеристики та особливості
+            </h2>
+        </div>
+        <div class="container">
+            <div class="features-grid">
+                <div class="features-text">
+                    <ul>
+                        <li>Легка та надійна рама</li>
+                        <li>Додаткові амортизатори для ще більш плавного руху коляски</li>
+                        <li>Закрита система гальмування</li>
+                        <li>Стійкі до проколів гелеві колеса</li>
+                        <li>Передні колеса поворотні на 360° з можливою фіксацією</li>
+                        <li>Обтягнута еко шкірою ручка регулюється по висоті</li>
+                        <li>Вентиляційне вікно на капюшоні люльки та прогулянкового блоку</li>
+                        <li>Спинка пластикової люльки регулюється ззовні</li>
+                        <li>Зручний матрац</li>
+                        <li>Зсередини люлька виконана із 100% бавовни</li>
+                        <li>Функція гойдалки (коли люлька лежить на рівній поверхні)</li>
+                        <li>Регулювання нахилу спинки та підніжки у прогулянковому блоці 5-ти точкові ремені безпеки
+                        </li>
+                        <li>Можливість встановлення прогулянкового блоку в обох напрямках</li>
+                        <li>Можливість встановлення автокрісла</li>
+
+                    </ul>
+                </div>
+                {% if single_stroller.sized_stroller %}
+                    <div class="features-image" style="margin: auto">
+                        <img src="{{ single_stroller.sized_stroller.url }}" class="border-img"
+                             alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}"/>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div
+                class="grid--6-cols grid"
+                style="max-width: 1200px; margin: 7rem auto 4rem;"
+        >
+            <div class="icon-item">
+                <img src="{% static 'img/icons/donatan-kolyaska-icon-snow.svg' %}"
+                     alt="Зимовий захист дитячої коляски"/>
+                <p>Зимовий захист</p>
+            </div>
+            <div class="icon-item">
+                <img
+                        src="{% static 'img/icons/donatan-kolyaska-icon-rain.svg' %}"
+                        alt="Накриття від дощу дитячої коляски"
+                />
+                <p>Накриття від дощу</p>
+            </div>
+            <div class="icon-item">
+                <img
+                        src="{% static 'img/icons/donatan-kolyaska-icon-koshyck.svg' %}"
+                        alt="Кошик для покупок дитячої коляски"
+                />
+                <p>Кошик для покупок</p>
+            </div>
+            <div class="icon-item">
+                <img
+                        src="{% static 'img/icons/donatan-kolyaska-icon-spynka.svg' %}"
+                        alt="Регульована спинка дитячої коляски"
+                />
+                <p>Регульована спинка</p>
+            </div>
+            <div class="icon-item">
+                <img
+                        src="{% static 'img/icons/donatan-kolyaska-icon-legs.svg' %}"
+                        alt="Регульована підніжка дитячої коляски"
+                />
+                <p>Регульована підніжка</p>
+            </div>
+            <div class="icon-item">
+                <img src="{% static 'img/icons/donatan-kolyaska-icon-child.svg' %}" alt="Дитячі ремні дитячої коляски"/>
+                <p>Дитячі ремні</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------- End Features Section --------- -->
+
+    <!-- --------- New Section --------- -->
+
+    <section class="about-us-section container detail-pc-vers">
+        <div class="about-us-detail">
+            {% if single_stroller.photo_first %}
+                <div class="grid-detail grid-template-detail">
+                    <div class="detail-img-container">
+                        <img
+                                src="{{ single_stroller.photo_first.url }}"
+                                alt="Багато функціональна коляска 2в1. {{ single_stroller.header_first }}"
+                                class="detail-img"
+                        />
+                    </div>
+                    <div class="text-about-detail">
+                        <h3 class="heading-primary-left">
+                            {{ single_stroller.header_first }}
+                        </h3>
+                        {{ single_stroller.description_first | safe }}
+                    </div>
+
+                </div>
+            {% endif %}
+            {% if single_stroller.photo_second %}
+                <div class="grid-detail grid-template-detail">
+                    <div class="text-about-detail">
+                        <h3 class="heading-primary-left">
+                            {{ single_stroller.header_second }}
+                        </h3>
+                        {{ single_stroller.description_second | safe }}
+                    </div>
+                    <div class="detail-img-container">
+                        <img
+                                src="{{ single_stroller.photo_second.url }}"
+                                alt="Багато функціональна коляска 2в1. {{ single_stroller.header_second }}"
+                                class="detail-img"
+                        />
+                    </div>
+                </div>
+            {% endif %}
+            {% if single_stroller.photo_third %}
+                <div class="grid-detail grid-template-detail">
+                    <div class="detail-img-container">
+                        <img
+                                src="{{ single_stroller.photo_third.url }}"
+                                alt="Багато функціональна коляска 2в1. {{ single_stroller.header_third }}"
+                                class="detail-img"
+                        />
+                    </div>
+                    <div class="text-about-detail">
+                        <h3 class="heading-primary-left">
+                            {{ single_stroller.header_third }}
+                        </h3>
+                        {{ single_stroller.description_third | safe }}
+                    </div>
+                </div>
+            {% endif %}
+            {% if single_stroller.photo_fourth %}
+                <div class="grid-detail grid-template-detail">
+                    <div class="text-about-detail">
+                        <h3 class="heading-primary-left">
+                            {{ single_stroller.header_fourth }}
+                        </h3>
+                        {{ single_stroller.description_fourth | safe }}
+                    </div>
+                    <div class="detail-img-container">
+                        <img
+                                src="{{ single_stroller.photo_fourth.url }}"
+                                alt="Багато функціональна коляска 2в1. {{ single_stroller.header_fourth }}"
+                                class="detail-img"
+                        />
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- --------- Mobile Version  --------- -->
+    <section class="about-us-section container detail-mob-vers">
+        <div class="about-us-detail">
+            {% if single_stroller.photo_first %}
+                <div class="grid-detail grid-template-detail">
+                    <div class="detail-img-container">
+                        <img
+                                src="{{ single_stroller.photo_first.url }}"
+                                alt="Багато функціональна коляска 2в1. {{ single_stroller.header_first }}"
+                                class="detail-img"
+                        />
+                    </div>
+                    <div class="text-about-detail">
+                        <h3 class="heading-primary-left">
+                            {{ single_stroller.header_first }}
+                        </h3>
+                    </div>
+                    <div class="description-detail">
+                        {{ single_stroller.description_first | safe }}
+                    </div>
+                </div>
+            {% endif %}
+            {% if single_stroller.photo_second %}
+                <div class="grid-detail grid-template-detail">
+                    <div class="text-about-detail">
+                        <h3 class="heading-primary-left">
+                            {{ single_stroller.header_second }}
+                        </h3>
+                    </div>
+                    <div class="description-detail">
+                        {{ single_stroller.description_second | safe }}
+                    </div>
+                    <div class="detail-img-container">
+                        <img
+                                src="{{ single_stroller.photo_second.url }}"
+                                alt="Багато функціональна коляска 2в1. {{ single_stroller.header_second }}"
+                                class="detail-img"
+                        />
+                    </div>
+                </div>
+            {% endif %}
+            {% if single_stroller.photo_third %}
+                <div class="grid-detail grid-template-detail">
+                    <div class="detail-img-container">
+                        <img
+                                src="{{ single_stroller.photo_third.url }}"
+                                alt="Багато функціональна коляска 2в1. {{ single_stroller.header_third }}"
+                                class="detail-img"
+                        />
+                    </div>
+                    <div class="text-about-detail">
+                        <h3 class="heading-primary-left">
+                            {{ single_stroller.header_third }}
+                        </h3>
+                    </div>
+                    <div class="description-detail">
+                        {{ single_stroller.description_third | safe }}
+                    </div>
+                </div>
+            {% endif %}
+            {% if single_stroller.photo_fourth %}
+                <div class="grid-detail grid-template-detail">
+                    <div class="text-about-detail">
+                        <h3 class="heading-primary-left">
+                            {{ single_stroller.header_fourth }}
+                        </h3>
+                    </div>
+                    <div class="description-detail">
+                        {{ single_stroller.description_fourth | safe }}
+                    </div>
+                    <div class="detail-img-container">
+                        <img
+                                src="{{ single_stroller.photo_fourth.url }}"
+                                alt="Багато функціональна коляска 2в1. {{ single_stroller.header_fourth }}"
+                                class="detail-img"
+                        />
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- --------- End New Section --------- -->
+
+
+    <!-- --------- Gallery Section --------- -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    {% if single_stroller.gallery_photo_1 %}
+        <section class="container container__detail">
+            <h3>Галерея</h3>
+
+            <div class="gallery-container__detail-gallery">
+                <div class="main-image__detail-gallery">
+                    <button
+                            class="nav-button__detail-gallery prev__detail-gallery"
+                            onclick="DetailGalleryPrevImage()"
+                    >
+                        &#9664;
+                    </button>
+                    <img
+                            id="DetailGalleryCurrentImage"
+                            src="{{ single_stroller.gallery_photo_1.url }}"
+                            alt="Багатофункціональні універсальні дитячі коляски 2в1 Donatan"
+                            onclick="DetailGalleryOpenModal()"
+                    />
+                    <button
+                            class="nav-button__detail-gallery next__detail-gallery"
+                            onclick="DetailGalleryNextImage()"
+                    >
+                        &#9654;
+                    </button>
+                </div>
+            </div>
+
+            <div
+                    id="DetailGalleryModal"
+                    class="modal__detail-gallery"
+                    onclick="DetailGalleryCloseModal(event)"
+            >
+                    <span
+                            class="close__detail-gallery"
+                            onclick="DetailGalleryCloseModal(event)"
+                    >&times;</span
+                    >
+                <button
+                        class="modal-nav__detail-gallery modal-prev__detail-gallery"
+                        onclick="DetailGalleryPrevImageModal(event)"
+                >
+                    &#10094;
+                </button>
+                <img
+                        class="modal-content__detail-gallery"
+                        id="DetailGalleryModalImg"
+                />
+                <button
+                        class="modal-nav__detail-gallery modal-next__detail-gallery"
+                        onclick="DetailGalleryNextImageModal(event)"
+                >
+                    &#10095;
+                </button>
+            </div>
+        </section>
+
+        <script>
+            const DetailGalleryImages = [
+                "{% if single_stroller.gallery_photo_1 %}{{ single_stroller.gallery_photo_1.url }}{% endif %}",
+                "{% if single_stroller.gallery_photo_2 %}{{ single_stroller.gallery_photo_2.url }}{% endif %}",
+                "{% if single_stroller.gallery_photo_3 %}{{ single_stroller.gallery_photo_3.url }}{% endif %}",
+                "{% if single_stroller.gallery_photo_4 %}{{ single_stroller.gallery_photo_4.url }}{% endif %}",
+                "{% if single_stroller.gallery_photo_5 %}{{ single_stroller.gallery_photo_5.url }}{% endif %}",
+                "{% if single_stroller.gallery_photo_6 %}{{ single_stroller.gallery_photo_6.url }}{% endif %}",
+                "{% if single_stroller.gallery_photo_7 %}{{ single_stroller.gallery_photo_7.url }}{% endif %}",
+                "{% if single_stroller.gallery_photo_8 %}{{ single_stroller.gallery_photo_8.url }}{% endif %}",
+            ];
+
+            let DetailGalleryCurrentIndex = 0;
+
+            function DetailGalleryShowImage(index) {
+                const imgElement = document.getElementById("DetailGalleryCurrentImage");
+                imgElement.src = DetailGalleryImages[index];
+            }
+
+            function DetailGalleryPrevImage() {
+                DetailGalleryCurrentIndex =
+                    DetailGalleryCurrentIndex > 0
+                        ? DetailGalleryCurrentIndex - 1
+                        : DetailGalleryImages.length - 1;
+                DetailGalleryShowImage(DetailGalleryCurrentIndex);
+            }
+
+            function DetailGalleryNextImage() {
+                DetailGalleryCurrentIndex =
+                    DetailGalleryCurrentIndex < DetailGalleryImages.length - 1
+                        ? DetailGalleryCurrentIndex + 1
+                        : 0;
+                DetailGalleryShowImage(DetailGalleryCurrentIndex);
+            }
+
+            function DetailGalleryOpenModal() {
+                const modal = document.getElementById("DetailGalleryModal");
+                const modalImg = document.getElementById("DetailGalleryModalImg");
+                const header = document.querySelector("header");
+                modal.style.display = "flex";
+                modalImg.src = DetailGalleryImages[DetailGalleryCurrentIndex];
+                document.body.style.overflow = "hidden"; // Disable background scrolling
+                header.classList.add("hidden-detail"); // Hide header
+            }
+
+            function DetailGalleryCloseModal(event) {
+                if (
+                    event.target.id === "DetailGalleryModal" ||
+                    event.target.className.includes("close__detail-gallery")
+                ) {
+                    const modal = document.getElementById("DetailGalleryModal");
+                    const header = document.querySelector("header");
+                    modal.style.display = "none";
+                    document.body.style.overflow = ""; // Enable background scrolling
+                    header.classList.remove("hidden-detail"); // Show header
+                }
+            }
+
+            function DetailGalleryPrevImageModal(event) {
+                event.stopPropagation();
+                DetailGalleryCurrentIndex =
+                    DetailGalleryCurrentIndex > 0
+                        ? DetailGalleryCurrentIndex - 1
+                        : DetailGalleryImages.length - 1;
+                const modalImg = document.getElementById("DetailGalleryModalImg");
+                modalImg.src = DetailGalleryImages[DetailGalleryCurrentIndex];
+            }
+
+            function DetailGalleryNextImageModal(event) {
+                event.stopPropagation();
+                DetailGalleryCurrentIndex =
+                    DetailGalleryCurrentIndex < DetailGalleryImages.length - 1
+                        ? DetailGalleryCurrentIndex + 1
+                        : 0;
+                const modalImg = document.getElementById("DetailGalleryModalImg");
+                modalImg.src = DetailGalleryImages[DetailGalleryCurrentIndex];
+            }
+
+            function DetailGalleryHandleScroll(event) {
+                event.preventDefault();
+                if (event.deltaY > 0) {
+                    DetailGalleryNextImageModal(event);
+                } else {
+                    DetailGalleryPrevImageModal(event);
+                }
+            }
+
+            document.getElementById("DetailGalleryModal").addEventListener("wheel", DetailGalleryHandleScroll);
+        </script>
+    {% endif %}
+    <!-- --------- End Gallery Section --------- -->
+{% endblock %}
+
+
+{% block script %}
+    document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.grid-detail');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('slide-in');
+    observer.unobserve(entry.target);
+    }
+    });
+    }, { threshold: 0.1 });
+
+    elements.forEach(element => {
+    observer.observe(element);
+    });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.grid-item, .product-container, .carousel-container');
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('slide-in');
+    observer.unobserve(entry.target);
+    }
+    });
+    }, { threshold: 0.1 });
+
+    elements.forEach(element => {
+    observer.observe(element);
+    });
+    });
+
+    const prevButton = document.querySelector(".carousel-control-prev");
+    const nextButton = document.querySelector(".carousel-control-next");
+    const carouselInner = document.querySelector(".carousel-inner");
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    let currentIndex = 0;
+
+    prevButton.addEventListener("click", () => {
+    currentIndex =
+    currentIndex > 0
+    ? currentIndex - 1
+    : carouselInner.children.length - 1;
+    updateCarousel();
+    });
+
+    nextButton.addEventListener("click", () => {
+    currentIndex =
+    currentIndex < carouselInner.children.length - 1
+    ? currentIndex + 1
+    : 0;
+    updateCarousel();
+    });
+
+    thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener("click", () => {
+    currentIndex = index;
+    updateCarousel();
+    });
+    });
+
+    carouselItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+    openModal(index);
+    });
+    });
+
+    function updateCarousel() {
+    carouselInner.style.transform = `translateX(-${
+    currentIndex * 100
+    }%)`;
+    thumbnails.forEach((thumbnail) =>
+    thumbnail.classList.remove("active")
+    );
+    thumbnails[currentIndex].classList.add("active");
+    }
+
+    // Main modal
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeModal = document.getElementById("close");
+    const modalPrevButton = document.querySelector(
+    ".modal-control-prev"
+    );
+    const modalNextButton = document.querySelector(
+    ".modal-control-next"
+    );
+
+    function openModal(index) {
+    modal.style.display = "flex";
+    modalImage.src = carouselItems[index].querySelector("img").src;
+    currentIndex = index;
+    }
+
+    function closeModalFunction() {
+    modal.style.display = "none";
+    }
+
+    closeModal.addEventListener("click", closeModalFunction);
+
+    modalPrevButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    currentIndex =
+    currentIndex > 0
+    ? currentIndex - 1
+    : carouselItems.length - 1;
+    modalImage.src =
+    carouselItems[currentIndex].querySelector("img").src;
+    });
+
+    modalNextButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    currentIndex =
+    currentIndex < carouselItems.length - 1
+    ? currentIndex + 1
+    : 0;
+    modalImage.src =
+    carouselItems[currentIndex].querySelector("img").src;
+    });
+
+    modal.addEventListener("click", closeModalFunction);
+
+    // Color gallery modal
+    const colorModal = document.getElementById("color-modal");
+    const colorModalImage =
+    document.getElementById("color-modal-image");
+    let colorCurrentIndex = 0;
+    const colorGalleryItems =
+    document.querySelectorAll(".gallery-item img");
+
+    function openColorModal(index) {
+    colorCurrentIndex = index;
+    colorModal.style.display = "flex";
+    colorModalImage.src = colorGalleryItems[index].src;
+    }
+
+    function closeColorModal() {
+    colorModal.style.display = "none";
+    }
+
+    function changeColorImage(direction) {
+    colorCurrentIndex =
+    (colorCurrentIndex + direction + colorGalleryItems.length) %
+    colorGalleryItems.length;
+    colorModalImage.src = colorGalleryItems[colorCurrentIndex].src;
+    }
+
+    colorModal.addEventListener("click", (event) => {
+    if (event.target === colorModal) {
+    closeColorModal();
+    }
+    });
+
+    <!--//----------------- Navigation for color modal-->
+    document
+    .querySelector(".modal-control-prev")
+    .addEventListener("click", (event) => {
+    event.stopPropagation();
+    changeColorImage(-1);
+    });
+
+    document
+    .querySelector(".modal-control-next")
+    .addEventListener("click", (event) => {
+    event.stopPropagation();
+    changeColorImage(1);
+    });
+
+
+    let slideIndexMobSs = 1;
+    showSlidesMobSs(slideIndexMobSs);
+
+    function plusSlidesMobSs(n) {
+    slideIndexMobSs += n;
+    if (slideIndexMobSs > document.querySelectorAll('.gallery-mob-ss img').length) {
+    slideIndexMobSs = 1;
+    } else if (slideIndexMobSs < 1) {
+    slideIndexMobSs = document.querySelectorAll('.gallery-mob-ss img').length;
+    }
+    showSlidesMobSs(slideIndexMobSs);
+    }
+
+    function currentSlideMobSs(n) {
+    slideIndexMobSs = n;
+    showSlidesMobSs(slideIndexMobSs);
+    }
+
+    function showSlidesMobSs(n) {
+    let i;
+    let slidesMobSs = document.querySelectorAll('.gallery-mob-ss img');
+    let dotsMobSs = document.getElementsByClassName("dot-mob-ss");
+    if (n > slidesMobSs.length) {slideIndexMobSs = 1}
+    if (n < 1) {slideIndexMobSs = slidesMobSs.length}
+    for (i = 0; i < slidesMobSs.length; i++) {
+    slidesMobSs[i].style.display = "none";
+    }
+    for (i = 0; i < dotsMobSs.length; i++) {
+    dotsMobSs[i].className = dotsMobSs[i].className.replace(" active-mob-ss", "");
+    }
+    slidesMobSs[slideIndexMobSs-1].style.display = "block";
+    dotsMobSs[slideIndexMobSs-1].className += " active-mob-ss";
+    }
+
+    <!--// Swipe functionality-->
+    const galleryMobSs = document.getElementById('gallery-mob-ss');
+    let touchstartXMobSs = 0;
+    let touchendXMobSs = 0;
+
+    galleryMobSs.addEventListener('touchstart', function(event) {
+    touchstartXMobSs = event.changedTouches[0].screenX;
+    }, false);
+
+    galleryMobSs.addEventListener('touchend', function(event) {
+    touchendXMobSs = event.changedTouches[0].screenX;
+    handleGestureMobSs();
+    }, false);
+
+    function handleGestureMobSs() {
+    if (touchendXMobSs < touchstartXMobSs) {
+    plusSlidesMobSs(1);
+    }
+    if (touchendXMobSs > touchstartXMobSs) {
+    plusSlidesMobSs(-1);
+    }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+{% endblock %}
